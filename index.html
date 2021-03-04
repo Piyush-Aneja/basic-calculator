@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calci.css" />
+    <title></title>
+  </head>
+  <body>
+      
+      <div class="main_intro">
+      <h1 id="main_heading">Welcome</h1>
+      <p id="main_para">Feel free to use this calculator</p>
+    </div>
+    <div id="layout">
+      <input type="text" id="res" value="" />
+      <div class="calci_layout">
+        <button id="btn0" class="digit" onclick="getVal(0)">0</button>
+        <button id="btn1" class="digit" onclick="getVal(1)">1</button>
+        <button id="btn2" class="digit" onclick="getVal(2)">2</button>
+        <button id="btn3" class="digit" onclick="getVal(3)">3</button>
+        <button id="btn4" class="digit" onclick="getVal(4)">4</button>
+        <button id="btn5" class="digit" onclick="getVal(5)">5</button>
+        <button id="btn6" class="digit" onclick="getVal(6)">6</button>
+        <button id="btn7" class="digit" onclick="getVal(7)">7</button>
+        <button id="btn8" class="digit" onclick="getVal(8)">8</button>
+        <button id="btn9" class="digit" onclick="getVal(9)">9</button>
+        <button id="btndot" class="digit" onclick="getVal('.')"><span>.</span></button>
+        <button name="add" id="add" onclick="getVal('+')">ADD</button>
+        <button name="sub" id="sub" onclick="getVal('-')">SUB</button>
+        <button name="mul" id="mul" onclick="getVal('*')">MUL</button>
+        <button name="div" id="div" onclick="getVal('/')">DIV</button>
+        <button name="mod" id="mod" onclick="getVal('%')">MOD</button>
+        
+        
+        <button name="reset" id="resetbtn" onclick="Reset()">Reset</button>
+        <button name="clear" id="clearbtn" onclick="Clear()">clear</button>
+        <button name="submit" id="submit" onclick="ResultClick()">
+            Calculate</button>
+    </div>
+    </div>
+
+    <script src="calci.js"></script>
+  </body>
+</html>
